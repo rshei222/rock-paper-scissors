@@ -1,1 +1,1 @@
-# rock-paper-scissors
+Game is a basic demonstration of javascript in websites, simulating game of five rounds of rock paper scissors within the console.
