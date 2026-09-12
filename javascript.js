@@ -3,10 +3,7 @@
 let humanScore = 0;
 let computerScore = 0;
 
-const humanChoice = getHumanChoice();
-const computerChoice = getComputerChoice();
-
-playRound(humanChoice, computerChoice);
+playGame();
 
 function getComputerChoice() {
     let num = Math.floor( ((Math.random() * 3) + 1) ); //rand int from 1 to 3
@@ -54,5 +51,16 @@ function playRound(humanChoice, computerChoice) {
     else if (humanChoice == computerChoice) {
         console.log("Tie. You both selected the same choice");
     }
+}
+
+function playGame() {
+    for (i = 0; i < 5; i++) {
+        let humanChoice = getHumanChoice();
+        let computerChoice = getComputerChoice();
+
+        playRound(humanChoice, computerChoice);
+    }
+
+    console.log("User score: " + humanScore + "\nComputer Score: " + computerScore);
 }
 
