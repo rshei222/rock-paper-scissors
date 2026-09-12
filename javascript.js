@@ -1,5 +1,5 @@
 function getComputerChoice() {
-    num = floor( ((Math.random() * 3) + 1) ); //rand int from 1 to 3
+    let num = Math.floor( ((Math.random() * 3) + 1) ); //rand int from 1 to 3
     if (num == 1) {
         return "rock";
     }
@@ -10,3 +10,5 @@ function getComputerChoice() {
         return "paper";
     }
 }
+
+console.log(getComputerChoice());
